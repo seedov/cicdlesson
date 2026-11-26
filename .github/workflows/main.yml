@@ -38,7 +38,7 @@ jobs:
           UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
         with:
           targetPlatform: StandaloneWindows
-        #  buildMethod: BuildScript.BuildAssetBundles
+          buildMethod: Utils.CreateBundles
 
       # Output
       - uses: actions/upload-artifact@v4
